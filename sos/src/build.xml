@@ -50,7 +50,7 @@
 
   <target name="test" depends="compile-testcases">
         <!--fork : each test will run in its own JVM (to seperate test cases)-->
-     <!--   <junit printsummary="true" haltonfailure="true" fork="true">
+       <junit printsummary="true" haltonfailure="true" fork="true">
             <classpath>
                 <path refid="NecessaryLibraries"></path>
                 <pathelement location="${result.javaclasses.dir}"/>
@@ -63,7 +63,7 @@
                 </fileset>
             </batchtest>
             
-        </junit>-->
+        </junit>
     </target>
     
 </project>
