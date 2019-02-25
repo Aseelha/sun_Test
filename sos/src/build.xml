@@ -38,7 +38,7 @@
                 
             	
             	<path id="NecessaryLibraries">
-            	        <pathelement location="C:\eclipse\plugins\org.junit_4.12.0.v201504281640.jar"/>
+            	        <pathelement location="C:\eclipse\plugins\org.junit-4.12.jar"/>
             	        <!--matcher-->
             	        <pathelement location="C:\eclipse\plugins\hamcrest-core-1.3.jar"/>
             	        <!--<pathelement location="./UsedLibraries/jacocoant.jar"/>-->
@@ -53,12 +53,12 @@
        <junit printsummary="true" haltonfailure="true" fork="true">
             <classpath>
                 <path refid="NecessaryLibraries"></path>
-                <pathelement location="${result.javaclasses.dir}"/>
-                <pathelement location="${result.testclasses.dir}"/>
+                <pathelement location="C:\apache-ant-1.10.5\lib\ant-junit4.jar"/>
+                <pathelement location="C:\apache-ant-1.10.5\lib\ant-junit4.jar"/>
             </classpath>
             <formatter type="brief" usefile="false"/>
             <batchtest >
-                <fileset dir="${result.testclasses.dir}" >
+                <fileset dir="C:\apache-ant-1.10.5\lib\ant-junit4.jar" >
                      <include name="**/*Test.class"/>
                 </fileset>
             </batchtest>
