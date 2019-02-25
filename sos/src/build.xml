@@ -20,7 +20,7 @@
     
 <target name="compile">
 <mkdir dir="${result.javaclasses.dir}"/>
-<javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false">
+<javac srcdir="C:\Users\aseel\eclipse-workspace\sos\src\jdk1.8.0_201" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false">
 </javac>
 </target>
 
@@ -33,7 +33,7 @@
 
 <target name="compile-testcases" depends="compile">
         <mkdir dir="${result.testclasses.dir}"/>
-        <javac srcdir="${src.test.dir}"  destdir="${result.testclasses.dir}" debug="true" includeantruntime="false">
+        <javac srcdir="C:\Users\aseel\eclipse-workspace\sos\src\jdk1.8.0_201"  destdir="${result.testclasses.dir}" debug="true" includeantruntime="false">
             <classpath>
                 
             	
@@ -47,7 +47,7 @@
             </classpath>
         </javac>        
     </target>
-    
+
   <target name="test" depends="compile-testcases">
         <!--fork : each test will run in its own JVM (to seperate test cases)-->
         <junit printsummary="true" haltonfailure="true" fork="true">
@@ -67,3 +67,4 @@
     </target>
     
 </project>
+

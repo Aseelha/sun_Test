@@ -21,13 +21,13 @@ public class ASTest {
 static product obj=new  product(null, 0, 0);
 
 
-	@Test
+@Test
  public void test1() {
 	//Aseert.assertTrue(obj.getcount()==0);
 		boolean x=(obj.getcount()==0);
 	assertTrue(x);	
 	}
-	@Test
+@Test
 	public void test2() {
 		int productj =1;
 		int pricej=127;
